@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Actions</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #1f293a;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+    }
+
+    .button-container {
+      width: 90%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .button {
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background-color: #0ef;
+      color: #2c4766;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+
+    .button:hover {
+      background-color: #0dc1d3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="button-container">
+    <a id="formSubmitLink" target="_blank" class="button">Google Form Submited</a>
+    <a id="loginDetailsLink" target="_blank" class="button">Login Form Submited</a>
+  </div>
+
+  <script>
+    // JavaScript for dynamically setting the links
+    document.getElementById('formSubmitLink').href = 'https://docs.google.com/spreadsheets/d/17k48YcxMBaBYaFN9jL92AwXJSDNTDaxragRiBmCJSfI/edit?usp=sharing';
+    document.getElementById('loginDetailsLink').href = 'https://docs.google.com/spreadsheets/d/19dDgafFN4-nuTE5u5md5hQfXXwc_zSkD-RSZQ6dGCn0/edit?usp=sharing';
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Responsive Login Page</title> 
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      overflow: hidden; /* Prevents scrolling */
+      background: url('color.gif') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Tamil Quote */
+    .quote {
+      position: absolute;
+      top: 20px;
+      text-align: center;
+      width: 100%;
+      font-size: 28px;
+      font-weight: bold;
+      color: #0ef;
+      animation: text-fade 3s ease-in-out infinite;
+    }
+
+    @keyframes text-fade {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    /* Centered Login Button */
+    .center-button {
+      position: fixed;
+      padding: 15px;
+      font-size: 18px;
+      background: #0ef;
+      color: #2c4766;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    /* Footer with Admin Login */
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: transparent;
+      color: #2c4766;
+      font-size: 18px;
+      text-align: center;
+      line-height: 60px;
+      cursor: pointer;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+
+    /* Admin Icon Button */
+    .admin-icon {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    .admin-icon svg {
+      width: 30px;
+      height: 30px;
+      fill: #2c4766;
+    }
+  </style> 
+ </head> 
+ <body> <!-- Tamil Quote --> 
+  <div class="quote">
+    சரியான தருணத்திற்காக காத்திருக்காதீர்கள், கிடைக்கின்ற தருணத்தை சரியாக பயன்படுத்த கற்றுக் கொள்ளுங்கள்! 
+  </div> <!-- Centered Login Button --> 
+  <div class="center-button" onclick="window.location.href='login.html'">
+    Login 
+  </div> <!-- Footer with Admin Login Button --> 
+  <div class="footer" onclick="window.location.href='admin-login.html'"> <button title="button" class="admin-icon"> 
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+     <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.3 0-9.6 1.7-9.6 4.8v2.4h19.2v-2.4c0-3.1-6.3-4.8-9.6-4.8z" />
+    </svg> </button> 
+  </div> 
+ </body>
+</html>
